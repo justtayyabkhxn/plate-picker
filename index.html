@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="resources/favicon.png"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <title>Plate Picker</title>
+</head>
+
+<body>
+    <!-- NAV BAR -->
+    <div class="nav">
+        <div class="what">
+            <span><a href="#what">What/Why is This?</a></span>
+        </div>
+        <div class="heading">PLATE PICKER</div>
+    </div>
+    <div class="mainheading">
+        <h2>Helloooo Mr/Miss InDecisive 🤣</h2>
+    </div>
+    <div class="refresh">
+        <button onclick="window.location.reload()">
+            <i class="bx bx-refresh"></i>
+        </button>
+    </div>
+    <div class="changemode">
+        <button class="mode-toggle" onclick="toggleMode()">
+            <i class="bx bxs-moon"></i>
+        </button>
+    </div>
+
+    <!-- CONTAINER 1 -->
+    <div class="container">
+        <div class="containerhead">We need some details about you!</div>
+        <form onsubmit="storeUserDetails(event)">
+            <div class="name">
+                <div class="firstnamebox">
+                    <div class="firstnameicon">
+                        <i class="fa-regular fa-circle-user fa-bounce fa-xl" style="color: #ffa200"></i>
+                    </div>
+                    <input name="firstname" maxlength="50" width="50em" type="text" placeholder="First Name" style="width: 300px" required />
+                </div>
+
+                <div class="lastnamebox">
+                    <div class="lastnameicon">
+                        <i class="fa-regular fa-circle-user fa-bounce fa-xl" style="color: #ffa200"></i>
+                    </div>
+                    <input name="lastname" maxlength="50" width="50em" type="text" placeholder="Last Name" style="width: 300px" required />
+                </div>
+            </div>
+            <div class="genderdob">
+                <div class="genderbox">
+                    <div class="gendericon">
+                        <i class="fa-solid fa-restroom fa-bounce" style="color: #ffa200"></i>
+                    </div>
+                    <select name="gender" width="20em" tabindex="" style="width: 310px" required>
+                        <option value="">Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                        <option value="Prefer Not to Say">Prefer Not to Say</option>
+                    </select>
+                </div>
+                <div class="agebox">
+                    <div class="ageicon">
+                        <i class="fa-solid fa-users fa-bounce" style="color: #ffa200"></i>
+                    </div>
+                    <input name="age" maxlength="2" width="50em" type="number" placeholder="Age" style="width: 300px" required />
+                </div>
+            </div>
+            <div class="buttonbox">
+                <div class="button">
+                    <button type="submit" class="submitvalue">Proceed</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- CONTAINER 2 -->
+    <div class="itemGenerator" id="generatorBox">
+        <div class="itemGeneratorhead">Let's Decide Now!</div>
+        <div class="userdetails">
+            <span></span>
+        </div>
+        <div class="item1">
+            <div class="snacks">
+                <span> Snacks </span>
+            </div>
+            <div class="generate1">
+                <button type="button" class="button1">Generate</button>
+            </div>
+            <div class="answer"></div>
+        </div>
+        <div class="item2">
+            <div class="maincourse">
+                <span> Main Course </span>
+            </div>
+            <div class="generate2">
+                <button type="button" class="button2">Generate</button>
+            </div>
+            <div class="answer"></div>
+        </div>
+        <div class="item3">
+            <div class="drinks">
+                <span> Drinks </span>
+            </div>
+            <div class="generate3">
+                <button type="button" class="button3">Generate</button>
+            </div>
+            <div class="answer"></div>
+        </div>
+    </div>
+    <!-- CONTAINER 3 -->
+    <div class="whatcontainer" id="what">
+        <div class="whatheading">Why/What is This?</div>
+        <span>
+            Welcome to Plate Picker, your go-to app for food suggestions! Feeling indecisive? We’ve got you covered with random picks for snacks, drinks, and main courses. Just tap a button, and we'll serve up delicious ideas to satisfy your cravings. Say goodbye to meal-time dilemmas and hello to tasty fun. With Plate Picker, you'll always have something yummy to munch, sip, or savor. Get ready to enjoy effortless meal planning and discover new favorites—because life’s too short to stress over what to eat!
+        </span>
+    </div>
+
+    <div class="bottom-text">
+        <p>
+            &copy; 2024, Made By
+            <a href="https://justtayyabkhxn.github.io/portfolio/" target="_blank">Tayyab Khan</a>
+        </p>
+    </div>
+
+    <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

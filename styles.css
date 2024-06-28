@@ -1,0 +1,601 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+
+}
+*::selection {
+  background-color: #ff8900;
+  color: white;
+}
+:root {
+  --bg-color: url("resources/dark-bg.png");
+  --text-color: white;
+  --second-color: black;
+  --container-text: rgb(255, 153, 0);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+}
+.heading {
+  font-size: 4rem;
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  background: rgb(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  border: solid 2px rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 2px black;
+  padding: 10px;
+  color: var(--container-text);
+}
+.mainheading h2 {
+  color: var(--);
+  margin-bottom: 2rem;
+  font-weight: 500;
+  font-size: 1.75rem;
+  text-shadow: 2px 2px 2px black;
+  border-radius: 35px;
+  padding: 20px;
+  text-align: center;
+  background: rgb(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  border: solid 2px rgba(255, 255, 255, 0.2);
+  font-family: "DynaPuff", system-ui;
+}
+.what{
+  margin-top: 50px;
+  margin-right: 100px;
+  margin-left: -300px;
+  border-radius: 20px;
+  height: 45px;
+  padding: 10px;
+  background: rgb(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  border: solid 2px rgba(255, 255, 255, 0.2);
+}
+.what span a{
+  font-size: 1.15rem;
+  color: var(--text-color);
+  font-family: "DynaPuff", system-ui;
+  transition: all;
+  text-decoration: none;
+}
+.what span a:hover{
+  transition: 0.3s ease-out;
+  color: #f09302;
+  cursor: pointer;
+}
+
+.container {
+  position: relative;
+  width: 800px;
+  background: rgb(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  border: solid 2px rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 20px;
+  color: var(--text-color);
+  transition: height 0.6s ease;
+}
+.containerhead {
+  font-size: 1.75rem;
+  text-align: center;
+  color: var(--text-color);
+  font-family: "DynaPuff", system-ui;
+
+  font-weight: 600;
+  text-shadow: 2px 2px 2px black;
+}
+form {
+  margin: 20px;
+  /* border: solid black 2px; */
+  padding: 10px;
+}
+.name {
+  font-family: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+}
+.firstnamebox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 45px;
+  box-shadow: 0px 0px 10px black;
+  /* box-sizing: border-box; */
+  /* width:100px; */
+  height: 45px;
+  opacity: 1;
+  transition: all;
+  transition-duration: 0.5s;
+}
+.firstnamebox:hover {
+  opacity: 0.75;
+}
+.firstnameicon {
+  margin-top: 1.25em;
+  margin-left: 10px;
+  padding-right: 8px;
+  width: 35px;
+  height: 30px;
+}
+
+.lastnamebox {
+  display: flex;
+  height: 45px;
+  margin-left: 20px;
+  box-shadow: 0px 0px 10px black;
+  /* box-sizing: border-box; */
+  /* width:100px; */
+  height: 45px;
+  opacity: 1;
+  transition: all;
+  transition-duration: 0.5s;
+}
+.lastnamebox:hover {
+  opacity: 0.75;
+}
+.lastnameicon {
+  margin-top: 1.25em;
+  /* border:solid ; */
+  margin-left: 10px;
+  width: 35px;
+  height: 30px;
+}
+.genderdob {
+  font-family: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  margin-top: 30px;
+}
+.genderbox {
+  display: flex;
+  width: 350px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 45px;
+  /* width:250px; */
+  box-shadow: 0px 0px 10px black;
+  /* box-sizing: border-box; */
+  /* width:100px; */
+  opacity: 1;
+  transition: all;
+  margin-right: 10px;
+  transition-duration: 0.5s;
+}
+.genderbox:hover {
+  opacity: 0.75;
+}
+.gendericon {
+  margin-top: 7.5px;
+  /* border:solid ; */
+  font-size: 1.75rem;
+  margin-left: 2px;
+  padding-right: 8px;
+  width: 35px;
+  height: 30px;
+}
+
+.agebox {
+  display: flex;
+  height: 45px;
+  margin-left: 10px;
+  box-shadow: 0px 0px 10px black;
+  /* box-sizing: border-box; */
+  /* width:100px; */
+  height: 45px;
+  opacity: 1;
+  transition: all;
+  transition-duration: 0.5s;
+}
+.agebox:hover {
+  opacity: 0.75;
+}
+.ageicon {
+  margin-top: 7.5px;
+  /* border:solid ; */
+  font-size: 1.5rem;
+  margin-left: 8px;
+  width: 35px;
+  height: 30px;
+}
+.buttonbox {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* border: solid 2px black; */
+}
+.button {
+  margin-top: 30px;
+  margin-right: 100px;
+  width: 10px;
+  transition: all;
+  transition-duration: 0.5s;
+  background-color: rgb(255, 255, 255);
+}
+.button button{
+  transition: all 0.3s ease-out;
+  z-index: 1;
+  cursor: pointer;
+  outline:none;
+  border: none;
+  box-shadow: 2px 2px 2px black;
+}
+.submitvalue {
+  font-family: "DynaPuff", system-ui;
+  font-size: 1.65em;
+  font-weight: 300;
+  text-shadow: 2px 2px 2px black;
+  transition: all;
+  padding: 7.5px;
+  color: var(--text-color);
+  transition-duration: 0.25s;
+  background-color: #212020;
+  word-spacing: 20px;
+}
+
+.submitvalue:hover {
+  background-color: #212020;
+  transform: scale(1.05);
+  color: #f09302;
+  cursor: pointer;
+}
+
+
+/* ------->>Container 2 */
+.itemGenerator {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 200px;
+  width: 800px;
+  background: rgb(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  border: solid 2px rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 20px;
+  color: var(--text-color);
+  transition: height 0.6s ease;
+}
+.itemGeneratorhead {
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--text-color);
+  font-family: "DynaPuff", system-ui;
+
+  font-weight: 600;
+  text-shadow: 2px 2px 2px black;
+}
+/*----->>>> ITEM1 */
+.item1{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.item .snacks{
+  /* align-items: center; */
+  justify-content: space-between;
+  
+}
+.item .generate1{
+  /* align-items: center; */
+  justify-content: space-between;
+  
+}
+.item1 .snacks span{
+  color: var(--text-color);
+  font-family: "DynaPuff", system-ui;
+  font-size: 1.75rem;
+  font-weight: 500;
+  text-shadow: 2px 2px 2px black;
+}
+.item1 .generate1 button{
+  border-radius: 10px;
+  font-family: "DynaPuff", system-ui;
+  font-size: 1.65em;
+  font-weight: 300;
+  text-shadow: 2px 2px 2px black;
+  transition: all;
+  padding: 7.5px;
+  color: var(--text-color);
+  transition-duration: 0.25s;
+  background-color: #212020;
+  word-spacing: 20px;
+}
+.generate1 button:hover{
+  background-color: #212020;
+  transform: scale(1.05);
+  color: #f09302;
+  cursor: pointer;
+}
+/*----->>>> ITEM 2 */
+.item2{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.item2 .maincourse{
+  /* align-items: center; */
+  justify-content: space-between;
+  
+}
+.item2 .generate2{
+  /* align-items: center; */
+  justify-content: space-between;
+  
+}
+.item2 .maincourse span{
+  color: var(--text-color);
+  font-family: "DynaPuff", system-ui;
+  font-size: 1.75rem;
+  font-weight: 500;
+  text-shadow: 2px 2px 2px black;
+}
+.item2 .generate2 button{
+  border-radius: 10px;
+  margin-left: -70px;
+  font-family: "DynaPuff", system-ui;
+  font-size: 1.65em;
+  font-weight: 300;
+  text-shadow: 2px 2px 2px black;
+  transition: all;
+  padding: 7.5px;
+  color: var(--text-color);
+  transition-duration: 0.25s;
+  background-color: #212020;
+  word-spacing: 20px;
+}
+.generate2 button:hover{
+  background-color: #212020;
+  transform: scale(1.05);
+  color: #f09302;
+  cursor: pointer;
+}
+/*----->>>> ITEM 3 */
+.item3{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.item3 .drinks{
+  /* align-items: center; */
+  justify-content: space-between;
+  
+}
+.item3 .generate3{
+  /* align-items: center; */
+  justify-content: space-between;
+  
+}
+.item3 .drinks span{
+  color: var(--text-color);
+  font-family: "DynaPuff", system-ui;
+  font-size: 1.75rem;
+  font-weight: 500;
+  text-shadow: 2px 2px 2px black;
+}
+.item3 .generate3 button{
+  border-radius: 10px;
+  margin-left: 10px;
+  font-family: "DynaPuff", system-ui;
+  font-size: 1.65em;
+  font-weight: 300;
+  text-shadow: 2px 2px 2px black;
+  transition: all;
+  padding: 7.5px;
+  color: var(--text-color);
+  transition-duration: 0.25s;
+  background-color: #212020;
+  word-spacing: 20px;
+}
+.generate3 button:hover{
+  background-color: #212020;
+  transform: scale(1.05);
+  color: #f09302;
+  cursor: pointer;
+}
+.answer{
+  font-family: "DynaPuff", system-ui;
+  font-size: 1.65em;
+  font-weight: 300;
+  text-shadow: 2px 2px 2px black;
+  transition: all;
+  padding: 7.5px;
+  color: var(--container-text);
+}
+.whatcontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 200px;
+  width: 800px;
+  background: rgb(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  border: solid 2px rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 20px;
+  color: var(--text-color);
+  transition: height 0.6s ease;
+}
+.whatheading{
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--container-text);
+  font-family: "DynaPuff", system-ui;
+  font-weight: 600;
+  text-shadow: 2px 2px 2px black;
+}
+.whatcontainer span{
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--text-color);
+  font-family: "DynaPuff", system-ui;
+  font-weight: 400;
+  text-shadow: 2px 2px 2px black;
+}
+.userdetails{
+  margin-top: 15px;
+  text-align: center;
+}
+.userdetails span{
+  font-family: "DynaPuff", system-ui;
+  font-size: 1.65em;
+  text-align: center;
+  font-weight: 300;
+  text-shadow: 2px 2px 2px black;
+  transition: all;
+  padding: 7.5px;
+  color: var(--container-text);
+}
+.buttonbox {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* border: solid 2px black; */
+}
+.button {
+  margin-top: 30px;
+  margin-right: 100px;
+  width: 10px;
+  transition: all;
+  transition-duration: 0.5s;
+  background-color: rgb(255, 255, 255);
+}
+.button a{
+  text-decoration: none;
+  color: var(--text-color);
+  font-family: "DynaPuff", system-ui;
+  transition-duration: 0.25s;
+
+}
+.button button{
+  transition: all 0.3s ease-out;
+  z-index: 1;
+  cursor: pointer;
+  outline:none;
+  border: none;
+  box-shadow: 2px 2px 2px black;
+}
+.submitvalue {
+  font-family: "DynaPuff", system-ui;
+  font-size: 1.65em;
+  font-weight: 300;
+  text-shadow: 2px 2px 2px black;
+  transition: all;
+  padding: 7.5px;
+  color: var(--text-color);
+  transition-duration: 0.25s;
+  background-color: #212020;
+  word-spacing: 20px;
+}
+
+.button a:hover {
+  background-color: #212020;
+  transform: scale(1.05);
+  color: #f09302;
+  cursor: pointer;
+}
+
+.refresh button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.refresh i {
+  font-size: 40px;
+  color: rgb(142, 142, 142);
+  transition: all 0.5s ease;
+}
+.refresh i:hover {
+  color: rgb(255, 131, 7);
+  transform: scale(1.25);
+}
+.changemode button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.changemode i {
+  font-size: 40px;
+  color: rgb(142, 142, 142);
+  transition: all 0.5s ease;
+}
+.changemode i:hover {
+  color: rgb(255, 131, 7);
+  transform: scale(1.25);
+}
+.bottom-text p {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 450;
+  color: var(--text-color);
+  bottom: 0;
+  text-shadow: 2px 2px 2px black;
+  width: fit-content;
+  height: fit-content;
+  color: white;
+  margin-top: 2rem;
+  font-family: "DynaPuff", system-ui;
+}
+.bottom-text a {
+  text-decoration: none;
+  font-family: "DynaPuff", system-ui;
+  text-shadow: 2px 2px 2px black;
+  color: rgb(255, 131, 7);
+
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px 15%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 80%;
+    transition: height 0.6s ease;
+  }
+}
+.light-mode {
+  --bg-color: url("resources/light-bg.jpg");
+  --text-color: #fbd8cf;
+  --second-color: black;
+}
