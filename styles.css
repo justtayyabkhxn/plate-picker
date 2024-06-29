@@ -4,7 +4,6 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
-
 }
 *::selection {
   background-color: #ff8900;
@@ -15,6 +14,7 @@
   --text-color: white;
   --second-color: black;
   --container-text: rgb(255, 153, 0);
+  --what-dark: white;
 }
 
 body {
@@ -62,7 +62,7 @@ body {
   border: solid 2px rgba(255, 255, 255, 0.2);
   font-family: "DynaPuff", system-ui;
 }
-.what{
+.what {
   margin-top: 50px;
   margin-right: 100px;
   margin-left: -300px;
@@ -73,14 +73,15 @@ body {
   backdrop-filter: blur(5px);
   border: solid 2px rgba(255, 255, 255, 0.2);
 }
-.what span a{
+.what span a {
   font-size: 1.15rem;
-  color: var(--text-color);
+  /* color: var(--text-color); */
+  color: var(--what-dark);
   font-family: "DynaPuff", system-ui;
   transition: all;
   text-decoration: none;
 }
-.what span a:hover{
+.what span a:hover {
   transition: 0.3s ease-out;
   color: #f09302;
   cursor: pointer;
@@ -241,11 +242,11 @@ form {
   transition-duration: 0.5s;
   background-color: rgb(255, 255, 255);
 }
-.button button{
+.button button {
   transition: all 0.3s ease-out;
   z-index: 1;
   cursor: pointer;
-  outline:none;
+  outline: none;
   border: none;
   box-shadow: 2px 2px 2px black;
 }
@@ -268,7 +269,6 @@ form {
   color: #f09302;
   cursor: pointer;
 }
-
 
 /* ------->>Container 2 */
 .itemGenerator {
@@ -296,31 +296,29 @@ form {
   text-shadow: 2px 2px 2px black;
 }
 /*----->>>> ITEM1 */
-.item1{
+.item1 {
   margin-top: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
 }
-.item .snacks{
+.item .snacks {
   /* align-items: center; */
   justify-content: space-between;
-  
 }
-.item .generate1{
+.item .generate1 {
   /* align-items: center; */
   justify-content: space-between;
-  
 }
-.item1 .snacks span{
+.item1 .snacks span {
   color: var(--text-color);
   font-family: "DynaPuff", system-ui;
   font-size: 1.75rem;
   font-weight: 500;
   text-shadow: 2px 2px 2px black;
 }
-.item1 .generate1 button{
+.item1 .generate1 button {
   border-radius: 10px;
   font-family: "DynaPuff", system-ui;
   font-size: 1.65em;
@@ -333,38 +331,36 @@ form {
   background-color: #212020;
   word-spacing: 20px;
 }
-.generate1 button:hover{
+.generate1 button:hover {
   background-color: #212020;
   transform: scale(1.05);
   color: #f09302;
   cursor: pointer;
 }
 /*----->>>> ITEM 2 */
-.item2{
+.item2 {
   margin-top: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
 }
-.item2 .maincourse{
+.item2 .maincourse {
   /* align-items: center; */
   justify-content: space-between;
-  
 }
-.item2 .generate2{
+.item2 .generate2 {
   /* align-items: center; */
   justify-content: space-between;
-  
 }
-.item2 .maincourse span{
+.item2 .maincourse span {
   color: var(--text-color);
   font-family: "DynaPuff", system-ui;
   font-size: 1.75rem;
   font-weight: 500;
   text-shadow: 2px 2px 2px black;
 }
-.item2 .generate2 button{
+.item2 .generate2 button {
   border-radius: 10px;
   margin-left: -70px;
   font-family: "DynaPuff", system-ui;
@@ -378,38 +374,36 @@ form {
   background-color: #212020;
   word-spacing: 20px;
 }
-.generate2 button:hover{
+.generate2 button:hover {
   background-color: #212020;
   transform: scale(1.05);
   color: #f09302;
   cursor: pointer;
 }
 /*----->>>> ITEM 3 */
-.item3{
+.item3 {
   margin-top: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
 }
-.item3 .drinks{
+.item3 .drinks {
   /* align-items: center; */
   justify-content: space-between;
-  
 }
-.item3 .generate3{
+.item3 .generate3 {
   /* align-items: center; */
   justify-content: space-between;
-  
 }
-.item3 .drinks span{
+.item3 .drinks span {
   color: var(--text-color);
   font-family: "DynaPuff", system-ui;
   font-size: 1.75rem;
   font-weight: 500;
   text-shadow: 2px 2px 2px black;
 }
-.item3 .generate3 button{
+.item3 .generate3 button {
   border-radius: 10px;
   margin-left: 10px;
   font-family: "DynaPuff", system-ui;
@@ -423,13 +417,13 @@ form {
   background-color: #212020;
   word-spacing: 20px;
 }
-.generate3 button:hover{
+.generate3 button:hover {
   background-color: #212020;
   transform: scale(1.05);
   color: #f09302;
   cursor: pointer;
 }
-.answer{
+.answer {
   font-family: "DynaPuff", system-ui;
   font-size: 1.65em;
   font-weight: 300;
@@ -438,7 +432,7 @@ form {
   padding: 7.5px;
   color: var(--container-text);
 }
-.whatcontainer{
+.whatcontainer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -453,7 +447,7 @@ form {
   color: var(--text-color);
   transition: height 0.6s ease;
 }
-.whatheading{
+.whatheading {
   font-size: 2.5rem;
   text-align: center;
   color: var(--container-text);
@@ -461,7 +455,7 @@ form {
   font-weight: 600;
   text-shadow: 2px 2px 2px black;
 }
-.whatcontainer span{
+.whatcontainer span {
   margin-top: 1rem;
   font-size: 1.5rem;
   text-align: center;
@@ -470,11 +464,11 @@ form {
   font-weight: 400;
   text-shadow: 2px 2px 2px black;
 }
-.userdetails{
+.userdetails {
   margin-top: 15px;
   text-align: center;
 }
-.userdetails span{
+.userdetails span {
   font-family: "DynaPuff", system-ui;
   font-size: 1.65em;
   text-align: center;
@@ -500,18 +494,17 @@ form {
   transition-duration: 0.5s;
   background-color: rgb(255, 255, 255);
 }
-.button a{
+.button a {
   text-decoration: none;
   color: var(--text-color);
   font-family: "DynaPuff", system-ui;
   transition-duration: 0.25s;
-
 }
-.button button{
+.button button {
   transition: all 0.3s ease-out;
   z-index: 1;
   cursor: pointer;
-  outline:none;
+  outline: none;
   border: none;
   box-shadow: 2px 2px 2px black;
 }
@@ -582,20 +575,123 @@ form {
   font-family: "DynaPuff", system-ui;
   text-shadow: 2px 2px 2px black;
   color: rgb(255, 131, 7);
-
 }
 
 @media (max-width: 600px) {
   .container {
     padding: 10px 15%;
+    display: flex;
+    flex-direction: column;
     margin-left: 1rem;
     margin-right: 1rem;
     width: 80%;
     transition: height 0.6s ease;
   }
+  .heading {
+    text-align: center;
+    font-size: 2rem;
+    margin: 10px;
+    padding-top: 15px;
+  }
+  .mainheading h2 {
+    font-size: 1.5rem;
+    padding: 5px;
+    margin-top: 10px;
+  }
+  .containerhead {
+    font-size: 1.35rem;
+  }
+  .what {
+    margin-left: 100px;
+    height: 100%;
+    text-align: center;
+  }
+  .what span a {
+    font-size: 1rem;
+  }
+  .nav {
+    flex-direction: column;
+  }
+  form {
+    flex-direction: column;
+  }
+  .name {
+    flex-direction: column;
+  }
+  .firstnamebox {
+    width: 170px;
+    margin-bottom: 1rem;
+  }
+  .lastnamebox{
+    margin-left: 45px;
+    width: 218px;
+  }
+  .lastnameicon{
+    margin-right: 5px;
+  }
+  .genderdob{
+    flex-direction: column;
+  }
+  .genderbox{
+    margin-top: -1rem;
+    margin-left: -45px;
+    width: 218px;
+    margin-bottom: 1rem;
+  }
+  .agebox{
+    margin-left: -55px;
+    width: 218px;
+    margin-bottom: 1rem;
+  }
+  .button{
+    margin-left: 50px;
+  }
+  .submitvalue{
+    font-size: 1rem;
+  }
+  .itemGenerator {
+    width: 80%;
+  }
+  .itemGeneratorhead {
+    font-size: 1.5rem;
+  }
+  .item1 .snacks span{
+    font-size: 0.75rem;
+  }
+  .item2 .maincourse span{
+    font-size: 0.75rem;
+  }
+  .item3 .drinks span{
+    font-size: 0.75rem;
+  }
+  .item1 .generate1 button{
+    font-size: 0.75rem;
+  }
+  .item2 .generate2 button{
+    margin-left: 10px;
+    font-size: 0.75rem;
+  }
+  .item3 .generate3 button{
+    font-size: 0.75rem;
+  }
+  .answer{
+    font-size: 0.75rem;
+  }
+  .whatcontainer{
+    width: 80%;
+  }
+  .whatheading{
+    font-size: 1rem;
+  }
+  .whatcontainer span{
+    font-size: 0.75rem;
+  }
+
 }
 .light-mode {
   --bg-color: url("resources/light-bg.jpg");
   --text-color: #fbd8cf;
   --second-color: black;
+  --what-dark: black;
 }
+
