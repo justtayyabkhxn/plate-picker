@@ -76,10 +76,11 @@ body {
 .what span a {
   font-size: 1.15rem;
   /* color: var(--text-color); */
-  color: var(--what-dark);
+  color: var(--text-color);
   font-family: "DynaPuff", system-ui;
   transition: all;
   text-decoration: none;
+  text-shadow: 2px 2px 2px black;
 }
 .what span a:hover {
   transition: 0.3s ease-out;
@@ -209,7 +210,7 @@ form {
   margin-left: 10px;
   box-shadow: 0px 0px 10px black;
   /* box-sizing: border-box; */
-  /* width:100px; */
+  /* width:10px; */
   height: 45px;
   opacity: 1;
   transition: all;
@@ -577,7 +578,7 @@ form {
   color: rgb(255, 131, 7);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1120px) {
   .container {
     padding: 10px 15%;
     display: flex;
@@ -622,31 +623,145 @@ form {
     width: 170px;
     margin-bottom: 1rem;
   }
-  .lastnamebox{
+  .lastnamebox {
     margin-left: 45px;
     width: 218px;
   }
-  .lastnameicon{
+  .lastnameicon {
     margin-right: 5px;
   }
-  .genderdob{
+  .genderdob {
     flex-direction: column;
   }
-  .genderbox{
+  .genderbox {
     margin-top: -1rem;
     margin-left: -45px;
     width: 218px;
     margin-bottom: 1rem;
   }
-  .agebox{
+  .agebox {
     margin-left: -55px;
-    width: 218px;
+    width: 100px;
     margin-bottom: 1rem;
   }
-  .button{
+  .button {
     margin-left: 50px;
   }
-  .submitvalue{
+  .submitvalue {
+    font-size: 2rem;
+  }
+  .itemGenerator {
+    width: 80%;
+  }
+  .itemGeneratorhead {
+    font-size: 1.5rem;
+  }
+  .item1 .snacks span {
+    font-size: 0.75rem;
+  }
+  .item2 .maincourse span {
+    font-size: 0.75rem;
+  }
+  .item3 .drinks span {
+    font-size: 0.75rem;
+  }
+  .item1 .generate1 button {
+    font-size: 0.75rem;
+  }
+  .item2 .generate2 button {
+    margin-left: 10px;
+    font-size: 0.75rem;
+  }
+  .item3 .generate3 button {
+    font-size: 0.75rem;
+  }
+  .answer {
+    font-size: 0.75rem;
+  }
+  .whatcontainer {
+    width: 80%;
+  }
+  .whatheading {
+    font-size: 1rem;
+  }
+  .whatcontainer span {
+    font-size: 0.75rem;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 10px 15%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 80%;
+    transition: height 0.6s ease;
+  }
+  .heading {
+    text-align: center;
+    font-size: 2rem;
+    margin: 10px;
+    padding-top: 15px;
+  }
+  .mainheading h2 {
+    font-size: 1.5rem;
+    padding: 5px;
+    margin-top: 10px;
+  }
+  .containerhead {
+    font-size: 1.35rem;
+  }
+  .what {
+    margin-left: 100px;
+    height: 100%;
+    text-align: center;
+  }
+  .what span a {
+    font-size: 1rem;
+  }
+  .nav {
+    flex-direction: column;
+  }
+  form {
+    flex-direction: column;
+  }
+  .name {
+    flex-direction: column;
+  }
+  .firstnamebox {
+    width: 170px;
+    margin-bottom: 1rem;
+    margin-left: -115px;
+
+  }
+  .lastnamebox {
+    margin-left: -85px;
+    width: 218px;
+  }
+  .lastnameicon {
+    margin-right: 5px;
+  }
+  .genderdob {
+    flex-direction: column;
+  }
+  .genderbox {
+    margin-top: -1rem;
+    margin-left: -45px;
+    width: 300px;
+    margin-bottom: 1rem;
+
+  }
+  .agebox {
+    margin-left: -355px;
+    width: 8%;
+    margin-bottom: 1rem;
+    max-width: 0.2rem;
+  }
+  .button {
+    margin-left: 50px;
+  }
+  .submitvalue {
     font-size: 1rem;
   }
   .itemGenerator {
@@ -655,38 +770,48 @@ form {
   .itemGeneratorhead {
     font-size: 1.5rem;
   }
-  .item1 .snacks span{
+  .item1 .snacks span {
     font-size: 0.75rem;
   }
-  .item2 .maincourse span{
+  .item2 .maincourse span {
     font-size: 0.75rem;
   }
-  .item3 .drinks span{
+  .item3 .drinks span {
     font-size: 0.75rem;
   }
-  .item1 .generate1 button{
+  .item1 .generate1 button {
     font-size: 0.75rem;
   }
-  .item2 .generate2 button{
+  .item2 .generate2 button {
     margin-left: 10px;
     font-size: 0.75rem;
   }
-  .item3 .generate3 button{
+  .item3 .generate3 button {
     font-size: 0.75rem;
   }
-  .answer{
+  .answer {
     font-size: 0.75rem;
   }
-  .whatcontainer{
+  .whatcontainer {
     width: 80%;
   }
-  .whatheading{
+  .whatheading {
     font-size: 1rem;
   }
-  .whatcontainer span{
+  .whatcontainer span {
     font-size: 0.75rem;
   }
-
+}
+@media (max-width: 575px) {
+  .firstnamebox {
+    width: 140px;
+  }
+  .lastnamebox {
+    width: 170px;
+  }
+  .agebox {
+    width: 100px;
+  }
 }
 .light-mode {
   --bg-color: url("resources/light-bg.jpg");
@@ -694,15 +819,3 @@ form {
   --second-color: black;
   --what-dark: black;
 }
-@media (max-width: 600px) {
-  .firstnamebox{
-    width:140px;
-  }
-  .lastnamebox{
-    width:170px;
-  }
-  .agebox{
-    width:170px;
-  }
-}
-
