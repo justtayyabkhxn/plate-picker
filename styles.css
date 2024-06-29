@@ -694,4 +694,15 @@ form {
   --second-color: black;
   --what-dark: black;
 }
+@media (max-width: 600px) {
+  .firstnamebox{
+    width:140px;
+  }
+  .lastnamebox{
+    width:170px;
+  }
+  .agebox{
+    width:170px;
+  }
+}
 
